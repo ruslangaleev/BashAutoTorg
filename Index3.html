@@ -17,7 +17,7 @@
         }, '5.68');
 
         function Message() {
-            VK.api("wall.post", {"message": "Hello!", "owner_id": -1}, function (data) {
+            VK.api("wall.post", {"message": "Hello!", "owner_id": -1, "from_group":1}, function (data) {
                 alert("Post ID:" + data.response.post_id);
             });
         }
