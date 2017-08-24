@@ -17,6 +17,7 @@
         }, '5.68');
 
         function Message() {
+            console.log('send message');
             VK.api("wall.post", {"message": "Hello!"}, function (data) {
                 alert("Post ID:" + data.response.post_id);
             });
