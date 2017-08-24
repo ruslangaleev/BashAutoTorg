@@ -9,8 +9,7 @@
     <script>
         VK.init(function() {
             console.warn('suuceeded');
-            // API initialization succeeded
-            // Your code here
+            Message();
         }, function() {
             // API initialization failed
             // Can reload page here
@@ -22,10 +21,6 @@
                 alert("Post ID:" + data.response.post_id);
             });
         }
-
-        $(document).ready(function(){
-            Message();
-        });
     </script>
 </body>
 </html>
