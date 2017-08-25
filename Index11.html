@@ -10,8 +10,11 @@
     <script language="javascript">
         VK.init({
             apiId: 6149015 // id созданного вами приложения вконтакте
+
         });
 
+        VK.removeCallback('onWallPostSave');
+        
         function sendwallpost(mydata) {
             VK.api("wall.post", {
                 owner_id: '-151567965', // от имени сообщества
