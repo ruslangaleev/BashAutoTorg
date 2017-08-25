@@ -14,8 +14,9 @@
 
         function sendwallpost(mydata) {
             VK.api("wall.post", {
-                owner_id: '-151567965',
-                message: mydata
+                owner_id: '-151567965', // от имени сообщества
+                message: mydata,
+                from_group: 1
             }, function (data) {});
         }
     </script>
